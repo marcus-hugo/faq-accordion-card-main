@@ -159,14 +159,14 @@ footer {
 
     .accordion-container {
         width: 920px;
-        height: 597px;
+        height: 642px;
         background-image: url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg);
         background-position:  -76px, -571px -248px;
         background-size: 472px, 966px;
         background-repeat: no-repeat;
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        justify-content: space-around;
+        align-items: flex-start;
     }
 
     .illustration-mobile {
@@ -176,12 +176,16 @@ footer {
     .illustration-box {
         display: inline;
         position: relative;
-        left: -376px;
-        top: 66px;
+        left: -177px;
+        top: 282px;
     }
 
     .bg-pattern-mobile {
         display: none;
+    }
+
+    .accordion {
+        padding-top: 25px;
     }
 
     h1 {
@@ -190,6 +194,6 @@ footer {
     }
 
     .btn, .panel, .divider {
-        width: 400px;
+        width: 350px;
     }
 }
