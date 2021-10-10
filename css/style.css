@@ -160,7 +160,7 @@ footer {
     .accordion-container {
         width: 920px;
         height: 597px;
-        background-image: url(images/illustration-woman-online-desktop.svg), url(images/bg-pattern-desktop.svg);
+        background-image: url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg);
         background-position:  -76px, -571px -248px;
         background-size: 472px, 966px;
         background-repeat: no-repeat;
