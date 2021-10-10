@@ -19,7 +19,7 @@
     /* Typography: Body Copy */
     --base-font-size: 12px;
     
-     /* Font */
+     /* Font weights: 400, 700 */
     --base-font-family: 'Kumbh Sans', sans-serif;
     
 }
@@ -42,65 +42,87 @@ body {
     background: linear-gradient(var(--soft-violet), var(--soft-blue));
     background-repeat: no-repeat;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-main {
-    margin: 0 1.5rem;
-}
-
-.acc-con-outer {
-    height: 643px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.acc-con-outer__ills-mobile {
-    display: block;
-    position: absolute;
-    left: 50%;
-    margin-left: -148px;
-    top: 66px;
-}
-
-.acc-con-inner {
-    height: 535px;
-    background-color: #FFFFFF;
+.accordion-container {
+    background-color: #fff;
+    margin: 148px 1.5rem 0 1.5rem;
+    padding-bottom: 31px;
     box-shadow: 0 50px 50px -20px rgba(53,18,122,0.50);
     border-radius: 23px;
 }
 
-.acc-con-inner__bg-patt-mobile {
+.illustration-mobile {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -146px;
+    margin-top: -107px;
+}
+.bg-pattern-mobile {
     display: block;
     margin: 0 auto;
 }
 
-.acc-con-inner__h-one {
+h1 {
     text-align: center;
+    font-weight: 400;
+    margin-top: 28px;
+    margin-bottom: 32px;
+    font-size: 32px;
+    color: #1E1F36;
+    letter-spacing: 0;
 }
 
-.acc__btn {
+.btn {
     margin: 0 24px;
-    border: none;
+    color: #4B4C5F;
     font-size: 13px;
-    color:hsl(238, 29%, 16%);
+    letter-spacing: 0;
 }
 
-.acc__btn--active:hover {
+.btn:hover {
     cursor: pointer;
     color:hsl(14, 88%, 65%);
 }
 
-.acc__panel {
+.panel {
     margin: 0 24px;
+    padding-top: 12px;
     display: none;
+    color: #787887;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.divider {
+    height: 1px;
+    margin: 17px 24px;
+    background-color: var(--light-grayish-blue);
+}
+
+.icon-arrow-down {
+    transform: rotate(180deg);
+    float: right;
+}
+.icon-arrow-down.active {
+    transform: rotate(0deg);
+}
+
+.btn.active {
+    font-weight: 700;
+}
+
+.panel.active {
+    display: block;
 }
 
 /* Footer */
+
+footer {
+    padding-top: 20px;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 

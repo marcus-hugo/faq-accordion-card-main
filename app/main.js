@@ -1,18 +1,16 @@
 
-const acc = document.querySelectorAll('.acc__btn');
+const btn = document.querySelectorAll('.btn');
 
+for (i=0; i<btn.length; i++) {
 
-for (i=0; i<acc.length; i++) {
-
-    acc[i].addEventListener('click', function() {
+    btn[i].addEventListener('click', function() {
         
     const panel = this.nextElementSibling;
+    const icon = this.firstElementChild;
 
-    if (panel.style.display === 'block') {
-        panel.style.display = 'none';
-        } else {
-        panel.style.display = 'block';
-        }
+    this.classList.toggle('active');
+    panel.classList.toggle('active');
+    icon.classList.toggle('active');
 
     });
     
