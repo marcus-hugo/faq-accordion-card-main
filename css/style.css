@@ -119,6 +119,7 @@ h1 {
     transform: rotate(180deg);
     float: right;
 }
+
 /* Active Classes */
 .icon-arrow-down.active {
     transform: rotate(0deg);
