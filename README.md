@@ -50,7 +50,7 @@ Users should be able to:
 
 ### What I learned
 
-First time building an accordion. It was a lot of fun!  I found out there are many ways to build an accordion with HTML and CSS, but, I chose to go with JavaScript.  Thought this would be a great way to practive writing JavaScript. Using the `.toggle()` method seemed the most straightforward way.
+- First time building an accordion. It was a lot of fun!  I found out there are many ways to build an accordion with HTML and CSS, but, I chose to go with JavaScript.  Thought this would be a great way to practice writing JavaScript. Using the `.toggle()` method seemed the most straightforward way.
 
 ```js 
 this.classList.toggle('active');
@@ -58,7 +58,7 @@ panel.classList.toggle('active');
 icon.classList.toggle('active');
 ```
 
-How to add, layer, and position two background images usding different
+- How to add, layer, and position two background images usding different
 `background:` properties.
 
 ```css 
@@ -67,7 +67,7 @@ background-position:  -76px, -571px -248px;
 background-size: 472px, 966px;
 background-repeat: no-repeat; 
 ```
-I ran into a 404 error with the background images `urls()`, it seems that
+- I ran into a 404 error with the background images `urls()`, it seems that
 adding `../` was the only way the files were found, though locally
 just adding the `/` the files would display.  I guess `../` is more specific?
 
