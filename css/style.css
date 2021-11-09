@@ -117,6 +117,7 @@ h1 {
 
 .icon-arrow-down {
     transform: rotate(180deg);
+    transition: 250ms linear;
     float: right;
 }
 
