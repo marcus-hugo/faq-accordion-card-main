@@ -1,17 +1,35 @@
 
-const btn = document.querySelectorAll('.btn');
+// https://codepen.io/kathykato/pen/MoZJom
 
-for (i=0; i<btn.length; i++) {
+const buttons = document.querySelectorAll('.btn');
 
-    btn[i].addEventListener('click', function() {
-        
-    const panel = this.nextElementSibling;
-    const icon = this.firstElementChild;
-
-    this.classList.toggle('active');
-    panel.classList.toggle('active');
-    icon.classList.toggle('active');
-
-    });
-    
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < buttons.length; i++) {
+    buttons[i].setAttribute('aria-expanded', 'false');
+  }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
 }
+
+buttons.forEach(button => button.addEventListener('click', toggleAccordion));
+
+
+
+// for (i=0; i<btn.length; i++) {
+
+//     btn[i].addEventListener('click', function() {
+        
+//     const panel = this.nextElementSibling;
+//     const icon = this.firstElementChild;
+
+//     this.classList.toggle('active');
+//     panel.classList.toggle('active');
+//     icon.classList.toggle('active');
+
+//     });
+    
+// }
