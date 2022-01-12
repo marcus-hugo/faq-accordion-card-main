@@ -77,7 +77,10 @@ just adding the `/` the files would display.  I guess `../` is more specific?
 
 
 ### Useful resources
+- https://codepen.io/kathykato/pen/MoZJom for only showing the current accordion
+panel when clicked.
 
+- reading more about `aria-expanded` https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-expanded
 
 
 ## Author
