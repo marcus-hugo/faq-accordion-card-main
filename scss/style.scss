@@ -44,6 +44,12 @@ body {
     height: 100vh;
 }
 
+@media(orientation:landscape) {
+    body {
+        height: fit-content;
+    }
+}
+
 /* Accordion */
 .accordion-container {
     background-color: #fff;

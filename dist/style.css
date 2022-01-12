@@ -39,6 +39,14 @@ body {
   height: 100vh;
 }
 
+@media (orientation: landscape) {
+  body {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
 /* Accordion */
 .accordion-container {
   background-color: #fff;
